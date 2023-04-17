@@ -1,0 +1,82 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#wrepper{
+	width: 50%;
+	margin: 0 auto;
+}
+header{
+    text-align: center;
+    margin: 10px;
+    background: #e9ecef;
+    height: 7rem;
+}
+header h1{
+    margin-bottom: 1.3rem;
+}
+header button{
+    background: #28a745;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.head{
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.card{
+	 display: none;
+	 justify-content: space-around;
+	 align-items: center;
+	 flex-wrap: wrap;
+}
+
+.card .img{
+	width: 150px;
+	height: 200px;
+	margin: 10px;
+	perspective: 1000px;
+	/*transition: all 1s linear;*/
+}
+
+img{
+	width: 100%;
+	height: 100%;
+
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: all 0.8s linear;
+  transform-style: preserve-3d;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front {
+  background-color: #bbb;
+  color: black;
+}
+.back {
+  transform: rotateY(180deg);
+} 
+
+
+.result{
+  display: none;
+}
+.restart{
+  display: none;
+}
